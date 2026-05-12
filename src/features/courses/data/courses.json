@@ -1,0 +1,76 @@
+{
+  "courses": [
+    {
+      "id": "1",
+      "name": "React Fundamentals",
+      "instructor": "John Doe",
+      "duration": "8 weeks",
+      "category": "Frontend",
+      "rating": 4.8,
+      "description": "Learn React from scratch with hooks and modern patterns"
+    },
+    {
+      "id": "2",
+      "name": "Advanced JavaScript",
+      "instructor": "Jane Smith",
+      "duration": "12 weeks",
+      "category": "Programming",
+      "rating": 4.9,
+      "description": "Deep dive into async patterns, closures, and prototypes"
+    },
+    {
+      "id": "3",
+      "name": "Node.js Backend",
+      "instructor": "Mike Johnson",
+      "duration": "10 weeks",
+      "category": "Backend",
+      "rating": 4.5,
+      "description": "Build RESTful APIs with Express and MongoDB"
+    },
+    {
+      "id": "4",
+      "name": "CSS Mastery",
+      "instructor": "Sarah Wilson",
+      "duration": "6 weeks",
+      "category": "Frontend",
+      "rating": 4.2,
+      "description": "Master layouts, animations, and modern CSS techniques"
+    },
+    {
+      "id": "5",
+      "name": "Python for Data Science",
+      "instructor": "Alex Brown",
+      "duration": "14 weeks",
+      "category": "Data Science",
+      "rating": 4.7,
+      "description": "Pandas, NumPy, and visualization libraries"
+    },
+    {
+      "id": "6",
+      "name": "TypeScript Deep Dive",
+      "instructor": "Emily Davis",
+      "duration": "8 weeks",
+      "category": "Programming",
+      "rating": 4.6,
+      "description": "Advanced types, generics, and design patterns"
+    },
+    {
+      "id": "7",
+      "name": "Full-Stack Next.js",
+      "instructor": "Chris Martin",
+      "duration": "16 weeks",
+      "category": "Full-Stack",
+      "rating": 4.4,
+      "description": "Server components, API routes, and deployment"
+    },
+    {
+      "id": "8",
+      "name": "GraphQL APIs",
+      "instructor": "Lisa Anderson",
+      "duration": "10 weeks",
+      "category": "Backend",
+      "rating": 3.9,
+      "description": "Schema design, resolvers, and Apollo Federation"
+    }
+  ]
+}
