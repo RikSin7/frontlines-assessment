@@ -20,7 +20,7 @@ export function FiltersBar({
           {totalItems} {totalItems === 1 ? 'course' : 'courses'} found
         </Badge>
         {Object.values(filters).some(Boolean) && (
-          <span className="text-sm text-neutral-500 dark:text-neutral-400">
+          <span className="text-sm text-muted-foreground">
             (filtered)
           </span>
         )}
@@ -29,11 +29,11 @@ export function FiltersBar({
       <div className="flex items-center gap-2 sm:gap-4 flex-wrap">
         {/* Page Size Selector */}
         <div className="flex items-center gap-2">
-          <span className="text-sm text-neutral-600 dark:text-neutral-400">Show:</span>
+          <span className="text-sm text-muted-foreground">Show:</span>
           <select
             value={pageSize}
             onChange={(e) => onPageSizeChange(Number(e.target.value))}
-            className="rounded-lg border border-neutral-300 bg-white px-2 py-1.5 text-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:border-neutral-600 dark:bg-neutral-800 dark:text-neutral-100"
+            className="rounded-lg border border-border bg-background px-2 py-1.5 text-sm focus:border-ring focus:outline-none focus:ring-2 focus:ring-ring/10 text-foreground"
           >
             <option value={6}>6 per page</option>
             <option value={12}>12 per page</option>
@@ -44,7 +44,7 @@ export function FiltersBar({
 
         {/* Sort Options */}
         <div className="flex items-center gap-2">
-          <span className="text-sm text-neutral-600 dark:text-neutral-400">Sort by:</span>
+          <span className="text-sm text-muted-foreground">Sort by:</span>
           <Select
             value={sortBy}
             onChange={(e) => onSortChange(e.target.value)}

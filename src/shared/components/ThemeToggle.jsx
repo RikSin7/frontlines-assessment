@@ -8,7 +8,7 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={toggleTheme}
-      className="rounded-lg border border-neutral-200 bg-white p-2 transition-colors hover:bg-neutral-100 dark:border-neutral-800 dark:bg-neutral-900 dark:hover:bg-neutral-800"
+      className="rounded-lg border border-border bg-card p-2 text-foreground transition-colors hover:bg-muted"
     >
       {theme === "dark" ? (
         <Sun size={18} />

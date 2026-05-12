@@ -1,21 +1,21 @@
 export default function Footer() {
     return (
-        <footer className="border-t border-neutral-200 dark:border-neutral-800">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-                <div className="flex flex-col md:flex-row justify-between items-center">
-                    <div className="text-center md:text-left mb-4 md:mb-0">
-                        <p className="text-neutral-500 dark:text-neutral-400">
-                            © {new Date().getFullYear()} Frontlines Course Directory. All rights reserved.
+        <footer className="border-t border-border/50 bg-background/50 backdrop-blur-sm transition-colors duration-300">
+            <div className="max-w-7xl mx-auto px-6 py-8">
+                <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+                    <div className="text-center md:text-left flex items-center gap-2">
+                        <p className="text-sm font-medium text-muted-foreground">
+                            © {new Date().getFullYear()} Frontlines Edutech. All rights reserved.
                         </p>
                     </div>
-                    <div className="flex space-x-6">
-                        <a href="#" className="text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-200 transition-colors">
+                    <div className="flex space-x-6 text-sm font-medium">
+                        <a href="#" className="text-muted-foreground hover:text-primary-600 transition-colors">
                             Privacy Policy
                         </a>
-                        <a href="#" className="text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-200 transition-colors">
+                        <a href="#" className="text-muted-foreground hover:text-primary-600 transition-colors">
                             Terms of Service
                         </a>
-                        <a href="#" className="text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-200 transition-colors">
+                        <a href="#" className="text-muted-foreground hover:text-primary-600 transition-colors">
                             Contact
                         </a>
                     </div>

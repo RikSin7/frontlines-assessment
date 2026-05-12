@@ -56,7 +56,7 @@ export const CoursePagination = memo(function CoursePagination({
 
       {pages.map((page, i) =>
         page === "..." ? (
-          <span key={`dots-${i}`} className="px-2 text-neutral-400 dark:text-neutral-500">
+          <span key={`dots-${i}`} className="px-2 text-muted-foreground">
             ...
           </span>
         ) : (

@@ -3,7 +3,7 @@ import { CourseFilters } from './components/CourseFilters';
 import { FiltersBar } from './components/FiltersBar';
 import { CourseCard } from './components/CourseCard';
 import { CourseTable } from './components/CourseTable';
-import { CourseSkeletonGrid } from './components/CourseSkeleton';
+import { CourseSkeletonGrid, CourseFiltersSkeleton, FiltersBarSkeleton } from './components/CourseSkeleton';
 import { CoursesError } from './components/CoursesError';
 import { CoursesEmpty } from './components/CoursesEmpty';
 import { useMediaQuery } from '../../shared/hooks/useMediaQuery';
@@ -47,13 +47,16 @@ export default function CoursesPage() {
   // Loading State
   if (status === 'loading') {
     return (
-      <div>
-        <h1 className="text-3xl font-bold mb-2 text-neutral-900 dark:text-neutral-100">
+      <div className="animate-in fade-in duration-500">
+        <h1 className="text-3xl font-bold mb-2 text-foreground">
           Course Directory
         </h1>
-        <p className="text-neutral-600 dark:text-neutral-400 mb-8">
+        <p className="text-muted-foreground mb-8">
           Explore our curated collection of courses
         </p>
+        
+        <CourseFiltersSkeleton />
+        <FiltersBarSkeleton />
         <CourseSkeletonGrid count={6} />
       </div>
     );
@@ -64,10 +67,10 @@ export default function CoursesPage() {
 
   return (
     <div>
-      <h1 className="text-3xl font-bold mb-2 text-neutral-900 dark:text-neutral-100">
+      <h1 className="text-3xl font-bold mb-2 text-foreground">
         Course Directory
       </h1>
-      <p className="text-neutral-600 dark:text-neutral-400 mb-8">
+      <p className="text-muted-foreground mb-8">
         Explore our curated collection of courses
       </p>
 
