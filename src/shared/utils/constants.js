@@ -6,5 +6,3 @@ export const SORT_OPTIONS = [
   { value: 'duration-asc', label: 'Shortest First' },
   { value: 'duration-desc', label: 'Longest First' },
 ];
-
-export const PAGE_SIZE = 6;
