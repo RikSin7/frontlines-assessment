@@ -1,13 +1,21 @@
-export default function CoursesError() {
+import { RefreshCw, WifiOff } from 'lucide-react';
+
+export function CoursesError({ message, onRetry }) {
   return (
-    <div className="flex flex-col items-center justify-center min-h-96">
-      <div className="text-6xl mb-4">Something went wrong</div>
-      <div className="text-xl mb-6">Please try refreshing the page</div>
+    <div className="flex flex-col items-center justify-center py-16 text-center">
+      <span className="text-6xl mb-4"><WifiOff /></span>
+      <h3 className="text-xl font-semibold text-neutral-900 dark:text-neutral-100 mb-2">
+        Failed to Load Courses
+      </h3>
+      <p className="text-neutral-600 dark:text-neutral-400 mb-6 max-w-md">
+        {message || 'Something went wrong while fetching courses. Please try again.'}
+      </p>
       <button
-        onClick={() => window.location.reload()}
-        className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+        onClick={onRetry}
+        className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
       >
-        Refresh Page
+        <RefreshCw className="h-4 w-4" />
+        Retry
       </button>
     </div>
   );
