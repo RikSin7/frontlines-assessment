@@ -31,6 +31,8 @@ export default function CoursesPage() {
     setPage,
     setView,
     refetch,
+    pageSize,
+    setPageSize,
   } = useCourses();
 
   const isMobile = useMediaQuery('(max-width: 768px)');
@@ -59,6 +61,7 @@ export default function CoursesPage() {
 
   // Error State
   if (status === 'failed') return <CoursesError message={error} onRetry={refetch} />;
+  console.log(pageSize)
 
   return (
     <div>
@@ -90,6 +93,8 @@ export default function CoursesPage() {
         filters={filters}
         onSortChange={setSort}
         onViewChange={setView}
+        onPageSizeChange={setPageSize}
+        pageSize={pageSize}
       />
 
       {/* Empty State */}
