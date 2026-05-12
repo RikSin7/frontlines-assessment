@@ -27,7 +27,6 @@ export function ThemeProvider({ children }) {
 
   const toggleTheme = () => setTheme((prev) => (prev === "dark" ? "light" : "dark"));
   const value = useMemo(() => ({ theme, toggleTheme }), [theme]);
-  console.log(value)
 
   return (
     <ThemeContext.Provider value={value}>

@@ -1,5 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import coursesData from '../data/courses.json';
+import { PAGE_SIZE } from '../../../shared/utils/constants';
 
 // Simulate API call with mock Courses data
 export const fetchCourses = createAsyncThunk(
@@ -24,7 +25,7 @@ const coursesSlice = createSlice({
     },
     sortBy: 'name-asc',
     currentPage: 1,
-    pageSize: 6,
+    pageSize: PAGE_SIZE,
     viewMode: 'card', // 'card' | 'table'
   },
   reducers: {
