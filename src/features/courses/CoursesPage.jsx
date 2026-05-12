@@ -37,18 +37,13 @@ export default function CoursesPage() {
 
   const isMobile = useMediaQuery('(max-width: 768px)');
 
-  // Auto switch to card view on mobile
-  useEffect(() => {
-    if (isMobile && viewMode === 'table') {
-      setView('card');
-    }
-  }, [isMobile, viewMode, setView]);
+  // Auto switch logic removed so the user can freely toggle views on any screen size.
 
   // Loading State
   if (status === 'loading') {
     return (
       <div className="animate-in fade-in duration-500">
-        <h1 className="text-3xl font-bold mb-2 text-foreground">
+        <h1 className="text-3xl font-bold mb-2 text-foreground transition-all duration-300">
           Course Directory
         </h1>
         <p className="text-muted-foreground mb-8">
@@ -66,11 +61,11 @@ export default function CoursesPage() {
   if (status === 'failed') return <CoursesError message={error} onRetry={refetch} />;
 
   return (
-    <div>
-      <h1 className="text-3xl font-bold mb-2 text-foreground">
+    <div className='transition-all duration-300'>
+      <h1 className="text-3xl font-bold mb-2 text-foreground transition-all duration-300">
         Course Directory
       </h1>
-      <p className="text-muted-foreground mb-8">
+      <p className="text-muted-foreground mb-8 transition-all duration-300">
         Explore our curated collection of courses
       </p>
 

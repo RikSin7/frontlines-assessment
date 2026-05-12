@@ -14,13 +14,13 @@ export function FiltersBar({
   onPageSizeChange,
 }) {
   return (
-    <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 py-4">
+    <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 py-4 w-full">
       <div className="flex items-center gap-3">
         <Badge variant="default">
           {totalItems} {totalItems === 1 ? 'course' : 'courses'} found
         </Badge>
         {Object.values(filters).some(Boolean) && (
-          <span className="text-sm text-muted-foreground">
+          <span className="text-sm text-muted-foreground transition-all duration-300">
             (filtered)
           </span>
         )}
@@ -33,7 +33,7 @@ export function FiltersBar({
           <select
             value={pageSize}
             onChange={(e) => onPageSizeChange(Number(e.target.value))}
-            className="rounded-lg border border-border bg-background px-2 py-1.5 text-sm focus:border-ring focus:outline-none focus:ring-2 focus:ring-ring/10 text-foreground"
+            className="rounded-lg border border-border bg-background px-2 py-1.5 text-sm focus:border-ring focus:outline-none focus:ring-2 focus:ring-ring/10 text-foreground transition-all duration-300 cursor-pointer"
           >
             <option value={6}>6 per page</option>
             <option value={12}>12 per page</option>
@@ -50,7 +50,7 @@ export function FiltersBar({
             onChange={(e) => onSortChange(e.target.value)}
             options={SORT_OPTIONS.map((opt) => opt.value)}
             placeholder="Sort"
-            className="w-[160px]"
+            className="w-[160px] transition-all duration-300"
           />
         </div>
 

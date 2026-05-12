@@ -3,7 +3,7 @@ import { Button } from '../../../shared/ui/Button';
 
 export function ViewToggle({ viewMode, onViewChange }) {
   return (
-    <div className="flex items-center gap-1 bg-muted rounded-lg p-1">
+    <div className="flex items-center gap-1 bg-muted rounded-lg p-1 transition-all duration-300">
       <Button
         variant={viewMode === 'card' ? 'primary' : 'ghost'}
         size="sm"

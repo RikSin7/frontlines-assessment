@@ -17,7 +17,7 @@ export function Button({ children, className, variant = 'primary', size = 'md', 
   return (
     <button
       className={cn(
-        'inline-flex items-center justify-center rounded-xl transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background',
+        'inline-flex items-center justify-center rounded-xl transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background',
         variants[variant],
         sizes[size],
         className

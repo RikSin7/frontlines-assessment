@@ -7,7 +7,7 @@ export const fetchCourses = createAsyncThunk(
   async () => {
     // Simulate network delay
     await new Promise((resolve) => setTimeout(resolve, 800));
-    return coursesData.courses;
+    return coursesData.courses || [];
   }
 );
 
