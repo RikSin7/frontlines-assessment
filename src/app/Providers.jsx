@@ -1,5 +1,5 @@
 import { Provider } from "react-redux";
-// import { ThemeProvider } from "../features/theme/ThemeContext";
+import { ThemeProvider } from "../features/theme/ThemeContext";
 
 export default function Providers({
   children,
@@ -7,9 +7,7 @@ export default function Providers({
 }) {
   return (
     <Provider store={store}>
-      {/* <ThemeProvider> */}
-      {children}
-      {/* </ThemeProvider> */}
+      <ThemeProvider>{children}</ThemeProvider>
     </Provider>
   );
 }
