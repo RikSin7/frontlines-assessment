@@ -29,7 +29,7 @@ export function FiltersBar({
           <span className="text-sm text-neutral-600 dark:text-neutral-400">Sort by:</span>
           <Select
             value={sortBy}
-            onChange={onSortChange}
+            onChange={(e) => onSortChange(e.target.value)}
             options={SORT_OPTIONS.map((opt) => opt.value)}
             placeholder="Sort"
             className="w-[160px]"

@@ -71,6 +71,384 @@
       "category": "Backend",
       "rating": 3.9,
       "description": "Schema design, resolvers, and Apollo Federation"
+    },
+    {
+      "id": "9",
+      "name": "Introduction to Python",
+      "instructor": "Alice Johnson",
+      "duration": "8 weeks",
+      "category": "Programming",
+      "rating": 4.7,
+      "description": "Learn the fundamentals of Python programming"
+    },
+    {
+      "id": "10",
+      "name": "React Native Mobile Apps",
+      "instructor": "Bob Williams",
+      "duration": "12 weeks",
+      "category": "Mobile",
+      "rating": 4.5,
+      "description": "Build cross-platform mobile apps with React Native"
+    },
+    {
+      "id": "11",
+      "name": "Advanced CSS & Animations",
+      "instructor": "Charlie Brown",
+      "duration": "6 weeks",
+      "category": "Frontend",
+      "rating": 4.8,
+      "description": "Master modern CSS, animations, and transitions"
+    },
+    {
+      "id": "12",
+      "name": "RESTful API Design",
+      "instructor": "Diana Prince",
+      "duration": "10 weeks",
+      "category": "Backend",
+      "rating": 4.6,
+      "description": "Design and build RESTful APIs with best practices"
+    },
+    {
+      "id": "13",
+      "name": "Data Structures in JavaScript",
+      "instructor": "Ethan Hunt",
+      "duration": "9 weeks",
+      "category": "Programming",
+      "rating": 4.4,
+      "description": "Implement data structures in JavaScript"
+    },
+    {
+      "id": "14",
+      "name": "MongoDB for Developers",
+      "instructor": "Fiona Gallagher",
+      "duration": "7 weeks",
+      "category": "Database",
+      "rating": 4.3,
+      "description": "Learn MongoDB for database management"
+    },
+    {
+      "id": "15",
+      "name": "Next.js 14 Mastery",
+      "instructor": "George Costanza",
+      "duration": "14 weeks",
+      "category": "Full-Stack",
+      "rating": 4.9,
+      "description": "Master Next.js with app router and server components"
+    },
+    {
+      "id": "16",
+      "name": "UI/UX Design Principles",
+      "instructor": "Hannah Montana",
+      "duration": "8 weeks",
+      "category": "Design",
+      "rating": 4.5,
+      "description": "Learn UI/UX design principles and practices"
+    },
+    {
+      "id": "17",
+      "name": "AWS Cloud Fundamentals",
+      "instructor": "Ian Malcolm",
+      "duration": "10 weeks",
+      "category": "Cloud",
+      "rating": 4.7,
+      "description": "Basics of AWS cloud services and deployment"
+    },
+    {
+      "id": "18",
+      "name": "Vue.js Framework",
+      "instructor": "Jane Doe",
+      "duration": "8 weeks",
+      "category": "Frontend",
+      "rating": 4.6,
+      "description": "Learn Vue.js framework for building web applications"
+    },
+    {
+      "id": "19",
+      "name": "TypeScript for React Developers",
+      "instructor": "Alice Johnson",
+      "duration": "9 weeks",
+      "category": "Programming",
+      "rating": 4.8,
+      "description": "Master TypeScript with React for type-safe applications"
+    },
+    {
+      "id": "20",
+      "name": "Full-Stack TypeScript",
+      "instructor": "Bob Williams",
+      "duration": "16 weeks",
+      "category": "Full-Stack",
+      "rating": 4.7,
+      "description": "Build full-stack applications using TypeScript end-to-end"
+    },
+    {
+      "id": "21",
+      "name": "Advanced React Patterns",
+      "instructor": "Charlie Brown",
+      "duration": "10 weeks",
+      "category": "Frontend",
+      "rating": 4.9,
+      "description": "Explore advanced React patterns and optimization techniques"
+    },
+    {
+      "id": "22",
+      "name": "Node.js Performance Tuning",
+      "instructor": "Diana Prince",
+      "duration": "12 weeks",
+      "category": "Backend",
+      "rating": 4.6,
+      "description": "Optimize Node.js applications for performance and scalability"
+    },
+    {
+      "id": "23",
+      "name": "Web Security Fundamentals",
+      "instructor": "Ethan Hunt",
+      "duration": "8 weeks",
+      "category": "Security",
+      "rating": 4.5,
+      "description": "Learn web security fundamentals and best practices"
+    },
+    {
+      "id": "24",
+      "name": "GraphQL for Beginners",
+      "instructor": "Fiona Gallagher",
+      "duration": "7 weeks",
+      "category": "Backend",
+      "rating": 4.4,
+      "description": "Introduction to GraphQL and API development"
+    },
+    {
+      "id": "25",
+      "name": "Next.js Authentication",
+      "instructor": "George Costanza",
+      "duration": "9 weeks",
+      "category": "Full-Stack",
+      "rating": 4.7,
+      "description": "Implement authentication in Next.js applications"
+    },
+    {
+      "id": "26",
+      "name": "Framer Motion Animations",
+      "instructor": "Hannah Montana",
+      "duration": "6 weeks",
+      "category": "Frontend",
+      "rating": 4.6,
+      "description": "Create animations with Framer Motion for React"
+    },
+    {
+      "id": "27",
+      "name": "Containerization with Docker",
+      "instructor": "Ian Malcolm",
+      "duration": "8 weeks",
+      "category": "DevOps",
+      "rating": 4.5,
+      "description": "Learn Docker for containerization and deployment"
+    },
+    {
+      "id": "28",
+      "name": "React Testing Library",
+      "instructor": "Jane Doe",
+      "duration": "7 weeks",
+      "category": "Frontend",
+      "rating": 4.4,
+      "description": "Master testing with React Testing Library"
+    },
+    {
+      "id": "29",
+      "name": "Advanced TypeScript",
+      "instructor": "Alice Johnson",
+      "duration": "10 weeks",
+      "category": "Programming",
+      "rating": 4.9,
+      "description": "Master advanced TypeScript features and patterns"
+    },
+    {
+      "id": "30",
+      "name": "Serverless Architectures",
+      "instructor": "Bob Williams",
+      "duration": "12 weeks",
+      "category": "Cloud",
+      "rating": 4.6,
+      "description": "Learn serverless architectures and AWS Lambda"
+    },
+    {
+      "id": "31",
+      "name": "Modern CSS with Tailwind",
+      "instructor": "Charlie Brown",
+      "duration": "8 weeks",
+      "category": "Frontend",
+      "rating": 4.8,
+      "description": "Master modern CSS with Tailwind for rapid UI development"
+    },
+    {
+      "id": "32",
+      "name": "Microservices Architecture",
+      "instructor": "Diana Prince",
+      "duration": "14 weeks",
+      "category": "Backend",
+      "rating": 4.7,
+      "description": "Design and implement microservices architectures"
+    },
+    {
+      "id": "33",
+      "name": "Advanced Algorithms",
+      "instructor": "Ethan Hunt",
+      "duration": "10 weeks",
+      "category": "Programming",
+      "rating": 4.9,
+      "description": "Master advanced algorithms and problem-solving techniques"
+    },
+    {
+      "id": "34",
+      "name": "PostgreSQL for Developers",
+      "instructor": "Fiona Gallagher",
+      "duration": "8 weeks",
+      "category": "Database",
+      "rating": 4.5,
+      "description": "Learn PostgreSQL for relational database management"
+    },
+    {
+      "id": "35",
+      "name": "Full-Stack TypeScript + Prisma",
+      "instructor": "George Costanza",
+      "duration": "14 weeks",
+      "category": "Full-Stack",
+      "rating": 4.8,
+      "description": "Build full-stack apps with TypeScript and Prisma ORM"
+    },
+    {
+      "id": "36",
+      "name": "Accessibility for Web Developers",
+      "instructor": "Hannah Montana",
+      "duration": "7 weeks",
+      "category": "Frontend",
+      "rating": 4.6,
+      "description": "Learn accessibility best practices for web development"
+    },
+    {
+      "id": "37",
+      "name": "DevOps Pipelines",
+      "instructor": "Ian Malcolm",
+      "duration": "10 weeks",
+      "category": "DevOps",
+      "rating": 4.7,
+      "description": "Build CI/CD pipelines with modern DevOps tools"
+    },
+    {
+      "id": "38",
+      "name": "React Performance Optimization",
+      "instructor": "Jane Doe",
+      "duration": "8 weeks",
+      "category": "Frontend",
+      "rating": 4.7,
+      "description": "Optimize React applications for better performance"
+    },
+    {
+      "id": "39",
+      "name": "Web Performance Metrics",
+      "instructor": "Alice Johnson",
+      "duration": "7 weeks",
+      "category": "Performance",
+      "rating": 4.6,
+      "description": "Master web performance metrics and optimization"
+    },
+    {
+      "id": "40",
+      "name": "Edge Computing with Cloudflare",
+      "instructor": "Bob Williams",
+      "duration": "9 weeks",
+      "category": "Cloud",
+      "rating": 4.5,
+      "description": "Build applications with edge computing on Cloudflare"
+    },
+    {
+      "id": "41",
+      "name": "Next.js 15 Mastery",
+      "instructor": "Alice Johnson",
+      "duration": "14 weeks",
+      "category": "Full-Stack",
+      "rating": 4.9,
+      "description": "Master Next.js 15 with app router and server components"
+    },
+    {
+      "id": "42",
+      "name": "Advanced React Concurrency",
+      "instructor": "Bob Williams",
+      "duration": "10 weeks",
+      "category": "Frontend",
+      "rating": 4.8,
+      "description": "Learn React concurrency and concurrent features"
+    },
+    {
+      "id": "43",
+      "name": "Node.js Authentication Systems",
+      "instructor": "Charlie Brown",
+      "duration": "9 weeks",
+      "category": "Backend",
+      "rating": 4.7,
+      "description": "Build secure authentication systems for Node.js"
+    },
+    {
+      "id": "44",
+      "name": "PostgreSQL Performance Tuning",
+      "instructor": "Diana Prince",
+      "duration": "10 weeks",
+      "category": "Database",
+      "rating": 4.6,
+      "description": "Optimize PostgreSQL for high performance and scalability"
+    },
+    {
+      "id": "45",
+      "name": "UI/UX Animations",
+      "instructor": "Hannah Montana",
+      "duration": "8 weeks",
+      "category": "Frontend",
+      "rating": 4.7,
+      "description": "Create engaging UI/UX animations for web applications"
+    },
+    {
+      "id": "46",
+      "name": "Serverless Authentication",
+      "instructor": "Ian Malcolm",
+      "duration": "9 weeks",
+      "category": "Cloud",
+      "rating": 4.5,
+      "description": "Build serverless authentication with AWS Cognito"
+    },
+    {
+      "id": "47",
+      "name": "Full-Stack TypeScript + Hono",
+      "instructor": "George Costanza",
+      "duration": "13 weeks",
+      "category": "Full-Stack",
+      "rating": 4.8,
+      "description": "Build full-stack apps with TypeScript and Hono framework"
+    },
+    {
+      "id": "48",
+      "name": "Progressive Web Apps",
+      "instructor": "Jane Doe",
+      "duration": "8 weeks",
+      "category": "Frontend",
+      "rating": 4.6,
+      "description": "Build Progressive Web Apps with modern features"
+    },
+    {
+      "id": "49",
+      "name": "React Query Mastery",
+      "instructor": "Alice Johnson",
+      "duration": "8 weeks",
+      "category": "Frontend",
+      "rating": 4.9,
+      "description": "Master React Query for state management and data fetching"
+    },
+    {
+      "id": "50",
+      "name": "AI for Developers",
+      "instructor": "Bob Williams",
+      "duration": "10 weeks",
+      "category": "AI",
+      "rating": 4.7,
+      "description": "Learn AI concepts and build AI-powered applications"
     }
   ]
 }

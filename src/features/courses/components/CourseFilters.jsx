@@ -19,7 +19,7 @@ export function CourseFilters({
 
   useEffect(() => {
     onSearchChange(debouncedSearch);
-  }, [debouncedSearch, onSearchChange]);
+  }, [debouncedSearch]);
 
   const hasActiveFilters = filters.search || filters.category || filters.instructor;
 
@@ -38,7 +38,7 @@ export function CourseFilters({
 
       <Select
         value={filters.category}
-        onChange={onCategoryChange}
+        onChange={(e) => onCategoryChange(e.target.value)}
         options={categories}
         placeholder="All Categories"
         className="min-w-[180px]"
@@ -46,7 +46,7 @@ export function CourseFilters({
 
       <Select
         value={filters.instructor}
-        onChange={onInstructorChange}
+        onChange={(e) => onInstructorChange(e.target.value)}
         options={instructors}
         placeholder="All Instructors"
         className="min-w-[180px]"

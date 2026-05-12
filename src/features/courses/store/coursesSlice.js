@@ -67,7 +67,6 @@ const coursesSlice = createSlice({
       .addCase(fetchCourses.fulfilled, (state, action) => {
         state.status = 'succeeded';
         state.items = action.payload;
-        // console.log(state.items)
       })
       .addCase(fetchCourses.rejected, (state, action) => {
         state.status = 'failed';

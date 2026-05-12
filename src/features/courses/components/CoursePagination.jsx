@@ -6,6 +6,7 @@ export function CoursePagination({
   totalPages,
   onPageChange,
 }) {
+    
   if (totalPages <= 1) return null;
 
   return (
