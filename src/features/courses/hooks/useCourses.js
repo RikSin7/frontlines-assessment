@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useCallback, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import {
   fetchCourses,
@@ -62,14 +62,14 @@ export function useCourses() {
     pageSize,
 
     // Actions
-    setSearch: (search) => dispatch(setSearchFilter(search)),
-    setCategory: (category) => dispatch(setCategoryFilter(category)),
-    setInstructor: (instructor) => dispatch(setInstructorFilter(instructor)),
-    clearAllFilters: () => dispatch(clearFilters()),
-    setSort: (sortBy) => dispatch(setSortBy(sortBy)),
-    setPage: (page) => dispatch(setCurrentPage(page)),
-    setView: (mode) => dispatch(setViewMode(mode)),
-    setPageSize: (size) => dispatch(setPageSize(size)),
-    refetch: () => dispatch(fetchCourses()),
+    setSearch: useCallback((search) => dispatch(setSearchFilter(search)), [dispatch]),
+    setCategory: useCallback((category) => dispatch(setCategoryFilter(category)), [dispatch]),
+    setInstructor: useCallback((instructor) => dispatch(setInstructorFilter(instructor)), [dispatch]),
+    clearAllFilters: useCallback(() => dispatch(clearFilters()), [dispatch]),
+    setSort: useCallback((sortBy) => dispatch(setSortBy(sortBy)), [dispatch]),
+    setPage: useCallback((page) => dispatch(setCurrentPage(page)), [dispatch]),
+    setView: useCallback((mode) => dispatch(setViewMode(mode)), [dispatch]),
+    setPageSize: useCallback((size) => dispatch(setPageSize(size)), [dispatch]),
+    refetch: useCallback(() => dispatch(fetchCourses()), [dispatch]),
   };
 }

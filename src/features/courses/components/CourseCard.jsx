@@ -1,8 +1,9 @@
 import { Star, Clock, User } from 'lucide-react';
 import { Card } from '../../../shared/ui/Card';
 import { Badge } from '../../../shared/ui/Badge';
+import { memo } from 'react';
 
-export function CourseCard({ course }) {
+export const CourseCard = memo(function CourseCard({ course }) {
   return (
     <Card className="p-6 flex flex-col h-full hover:border-blue-300 dark:hover:border-blue-600 transition-colors">
       <div className="flex justify-between items-start mb-4">
@@ -35,4 +36,4 @@ export function CourseCard({ course }) {
       </div>
     </Card>
   );
-}
+});

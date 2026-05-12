@@ -61,7 +61,6 @@ export default function CoursesPage() {
 
   // Error State
   if (status === 'failed') return <CoursesError message={error} onRetry={refetch} />;
-  console.log(pageSize)
 
   return (
     <div>

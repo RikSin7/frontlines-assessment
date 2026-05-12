@@ -3,9 +3,9 @@ import { Input } from '../../../shared/ui/Input';
 import { Select } from '../../../shared/ui/Select';
 import { Button } from '../../../shared/ui/Button';
 import { useDebouncedSearch } from '../hooks/useDebouncedSearch';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, memo } from 'react';
 
-export function CourseFilters({
+export const CourseFilters = memo(function CourseFilters({
   filters,
   categories,
   instructors,
@@ -65,4 +65,4 @@ export function CourseFilters({
       )}
     </div>
   );
-}
+});

@@ -1,7 +1,8 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "../../../shared/ui/Button";
+import { memo } from "react";
 
-export function CoursePagination({
+export const CoursePagination = memo(function CoursePagination({
   currentPage,
   totalPages,
   onPageChange,
@@ -51,4 +52,4 @@ export function CoursePagination({
       </Button>
     </div>
   );
-}
+});
