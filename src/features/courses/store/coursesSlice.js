@@ -41,7 +41,7 @@ const coursesSlice = createSlice({
       state.currentPage = 1;
     },
     clearFilters: (state) => {
-      state.filters = { search: '', category: '', instructor: '' };
+      state.filters = { search: '', category: '', instructor: '', };
       state.currentPage = 1;
     },
     setSortBy: (state, action) => {

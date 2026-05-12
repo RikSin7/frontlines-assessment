@@ -14,12 +14,16 @@ export const CourseFilters = memo(function CourseFilters({
   onInstructorChange,
   onClearFilters,
 }) {
-  const [searchInput, setSearchInput] = useState(filters.search);
+  const [searchInput, setSearchInput] = useState(filters.search || '');
   const debouncedSearch = useDebouncedSearch(searchInput);
 
   useEffect(() => {
     onSearchChange(debouncedSearch);
-  }, [debouncedSearch]);
+  }, [debouncedSearch, onSearchChange]);
+
+  useEffect(() => {
+    setSearchInput(filters.search || '');
+  }, [filters.search]);
 
   const hasActiveFilters = filters.search || filters.category || filters.instructor;
 
