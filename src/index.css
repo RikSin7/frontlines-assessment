@@ -59,8 +59,14 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+@layer base {
+  *, ::before, ::after {
+    @apply transition-colors duration-300;
+  }
+}
+
 body {
-  @apply bg-background text-foreground antialiased transition-colors duration-300;
+  @apply bg-background text-foreground antialiased;
 }
 
 button {
